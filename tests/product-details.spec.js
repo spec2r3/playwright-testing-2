@@ -3,7 +3,7 @@ import { verifyProductDetails,getRandomProduct, goToPage, getRandomPageNumber } 
 
 test.describe('View Product Details', () => {
   
-  test('random product detail page shows correct info', async ({ page }) => {
+  test('Test product details page', async ({ page }) => {
     await page.goto('');
     const randomPage = await getRandomPageNumber(page);
     await goToPage(page,randomPage);
